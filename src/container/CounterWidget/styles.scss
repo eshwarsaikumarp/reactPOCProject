@@ -1,0 +1,38 @@
+@import "../../lib/_mixins.scss";
+@import "../../lib/_variables.scss";
+
+.container {
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    @include mq("desktop-wide") {
+        width: 95%;
+        background: $blue;
+    }
+
+    @include mq("laptop") {
+        width: 95%;
+        background: red;
+    }
+
+    @include mq("phone") {
+        width: 95%;
+        background: $maroon;
+    }
+
+    @include mqlg("phone") {
+        width: 95%;
+        background: rgb(179, 179, 180);
+    }
+
+    @include mqlg("tablet") {
+        width: 499px;
+    }
+
+    @include mqlg("tablet-wide") {
+        width: 700px;
+        background: $drakGray;
+    }
+}
